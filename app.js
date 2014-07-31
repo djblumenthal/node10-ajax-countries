@@ -15,7 +15,7 @@ app.get('/countries', function(req, res){
 })
 
 app.get('/search', function(req, res){
-	console.log(req.body.)
+	console.log(req.query.userCountrySearch);
 })
 
 var server = app.listen(5656, function() {
