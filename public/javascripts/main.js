@@ -10,4 +10,9 @@ $(function(){
 
 		});
 	});
+	$('#search-button').on('click', function(){
+		$.get('/search', { userCountrySearch: $('#search-input').val()}, function(data){
+
+		})
+	})
 });

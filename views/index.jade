@@ -1,6 +1,8 @@
 extends layout
 
 block content
-	h1 Hello Boulder!
+	form#search-country
+		input#search-input(type='text')
+		button#search-button(type='button')
 	button#button-load-countries Load Countries
 	ol#countries-list
