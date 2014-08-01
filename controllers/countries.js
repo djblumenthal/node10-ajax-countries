@@ -20,6 +20,14 @@ var countriesController = {
 
 		res.send(countriesFound);
 
+	},
+	// add or change has visited property for country object
+	hasVisited: function(req, res){
+		if (req.body.hasVisited) {
+			countries[req.body.countryArrayIndex].hasVisited = true;
+		}else {
+			countries[req.body.countryArrayIndex].hasVisited = false;
+		}res.send(countries[req.body.countryArrayIndex].hasVisited);
 	}
 };
 

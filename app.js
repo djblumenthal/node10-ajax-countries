@@ -17,6 +17,9 @@ app.get('/countries', countriesController.listAllCountries);
 // route for searching for a country and filtering results
 app.get('/search', countriesController.countriesSearch);
 
+// route for setting hasVisited property
+app.post('/hasVisited', countriesController.hasVisited);
+
 var server = app.listen(5656, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
